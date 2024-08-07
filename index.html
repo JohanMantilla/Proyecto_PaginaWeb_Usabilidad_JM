@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprendimiento de Artesanías</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fafafa;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #4caf50;
+            padding: 10px 0px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        nav #logo img {
+            max-height: 50px;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        nav h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: rgba(255, 255, 255, 0.30)
+        }
+
+        .container {
+            width: 100%;
+            width: 1200px;
+            
+        }
+
+        #productoTitulo{
+            text-align: center;
+            font-size: 100px;
+            margin: 0px;
+            color: #4caf50;
+        }
+
+        #nosotrosTitulo{
+            text-align: center;
+            font-size: 100px;
+            margin: 0px;
+            color: #4caf50;
+        }
+
+        #publicidadTitulo{
+            text-align: center;
+            font-size: 100px;
+            margin: 0px;
+            color: #4caf50;
+        }
+
+        section {
+            width: 100%;
+            padding: 40px 0px;
+        }
+
+        #Productos {
+            background-color: rgba(76,175,80,0.10);
+        }
+
+        #Nosotros {
+            background-color: rgba(76,175,80,0.15);
+        }
+
+        
+        #Publicidad {
+            background-color: rgba(76,175,80,0.20);
+        }
+
+
+        #Contactos {
+            background-color: #4caf50;
+        }
+
+        section h1 {
+            color: #5d576b;
+        }
+
+        section .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .product-card:hover, .product-card:focus {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin-top: 0;
+            color: #5d576b;
+        }
+
+        .product-card p {
+            color: #666;
+        }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        .product-table th, .product-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .product-table th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        #Nosotros .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;      
+        }
+
+
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #8e9aaf;
+            color: #fff;
+            text-align: center;
+           
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover, footer a:focus {
+            color: #ddd;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contactosTitulo{
+            text-align: left;
+            margin: 0px;
+            font-size: 1.5em;
+        }
+
+
+        footer .containerFooterIzquierda{
+            width: 65%;
+            text-align: left;
+        }
+
+        footer .containerFooterCentro{
+            width: 10%;
+            text-align: right;
+        }
+
+        footer .containerFooterDerecha{
+            width: 20%;
+        }
+
+        footer p i{
+            padding: 0px 15px;
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/231fce7ca5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav id="menu" tabindex="0">
+        <div class="nav-left" tabindex="0">
+            <div id="logo" tabindex="0"><img src="./imagenes/aya-huma.png" alt="Logo del emprendimiento de artesanías"></div>
+            <h1 tabindex="0">ArtesaníasEc</h1>
+        </div>
+        <ul>
+            <li><a href="#Productos" tabindex="0">Productos</a></li>
+            <li><a href="#Nosotros" tabindex="0">Nosotros</a></li>
+            <li><a href="#Publicidad" tabindex="0">Publicidad</a></li>
+            <li><a href="#Contactos" tabindex="0">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <section id="Productos" tabindex="0">
+            <h1 id="productoTitulo" tabindex="0">Productos</h1>
+        <div class="container">
+            <div class="product-card" tabindex="0">
+                <h3 tabindex="0">Perrito de Cerámica</h3>
+                <img src="./imagenes/artesania1.jpeg" alt="Perrito amarillo de Cerámica" tabindex="0">
+                <p tabindex="0">Producto 100% Ecuatoriano hecho artesanalmente y elaborado con cerámica y pintura acrílica.</p>
+                <table class="product-table" aria-label="Tabla de detalles del producto 1" tabindex="0">
+                    <thead>
+                        <tr>
+                            <th tabindex="0">Categoría</th>
+                            <th tabindex="0">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Artesanía</td>
+                            <td tabindex="0">Cerámica</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Adorno</td>
+                            <td tabindex="0">Pinturas acrílicas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-card" tabindex="0">
+                <h3 tabindex="0">Pantera de Cerámica</h3>
+                <img src="./imagenes/artesania2.jpg" alt="Pantera de Cerámica" tabindex="0">
+                <p tabindex="0">Adornos de animales hechos a base de ceramica y pinturas acrilicas y con relieves. </p>
+                <table class="product-table" aria-label="Tabla de detalles del producto 2" tabindex="0">
+                    <thead>
+                        <tr>
+                            <th tabindex="0">Categoría</th>
+                            <th tabindex="0">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Artesanía</td>
+                            <td tabindex="0">Decoración</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Cerámica</td>
+                            <td tabindex="0">Pinturas acrílicas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-card" tabindex="0">
+                <h3 tabindex="0">Caretas de animales</h3>
+                <img src="./imagenes/artesania3.jpg" alt="Caretas de animales de cartón" tabindex="0">
+                <p tabindex="0">Caretas de animales elaboradas con cartón y pinturas, con bordes elegantes.</p>
+                <table class="product-table" aria-label="Tabla de detalles del producto 3" tabindex="0">
+                    <thead>
+                        <tr>
+                            <th tabindex="0">Categoría</th>
+                            <th tabindex="0">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Disfraces</td>
+                            <td tabindex="0">Cartón</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Arte</td>
+                            <td tabindex="0">Pinturas acrílicas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-card" tabindex="0">
+                <h3 tabindex="0">Vasijas de Barro</h3>
+                <img src="./imagenes/artesania4.jpg" alt="Vasijas de Barro" tabindex="0">
+                <p tabindex="0">Vasijas de barro moldeadas a mano, pintadas con pinturas especiales.</p>
+                <table class="product-table" aria-label="Tabla de detalles del producto 4" tabindex="0">
+                    <thead>
+                        <tr>
+                            <th tabindex="0">Categoría</th>
+                            <th tabindex="0">Material Principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Artesanía</td>
+                            <td tabindex="0">Barro</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Hogar</td>
+                            <td tabindex="0">Pinturas especiales</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-card" tabindex="0">
+                <h3 tabindex="0">Utensilios de Barro</h3>
+                <img src="./imagenes/artesania5.jpg" alt="Utensilios de cocina de Barro y arsilla" tabindex="0">
+                <p tabindex="0">Platos, vasos, e Utensilios elaborados con barro y arsilla.</p>
+                <table class="product-table" aria-label="Tabla de detalles del producto 5" tabindex="0">
+                    <thead>
+                        <tr>
+                            <th tabindex="0">Categoría</th>
+                            <th tabindex="0">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Artesanía</td>
+                            <td tabindex="0">Barro</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Cocina</td>
+                            <td tabindex="0">Arsilla</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="product-card" tabindex="0">
+                <h3 tabindex="0">Sombreros de paja toquilla</h3>
+                <img src="./imagenes/artesania6.jpg" alt="Sombreros de paja toquilla" tabindex="0">
+                <p tabindex="0">Más que un sombrero un arte reconocido a nivel mundial, sombreros elaborados a mano de paja toquilla.</p>
+                <table class="product-table" aria-label="Tabla de detalles del producto 6" tabindex="0">
+                    <thead>
+                        <tr>
+                            <th tabindex="0">Categoría</th>
+                            <th tabindex="0">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="0">Artesanía</td>
+                            <td tabindex="0">Tallos de paja toquilla</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="0">Vestimenta</td>
+                            <td tabindex="0">Horno de azufre</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="Nosotros" tabindex="0">
+        <h1 id="nosotrosTitulo" tabindex="0">Nosotros</h1>
+        <div class="container" tabindex="0">
+            <p tabindex="0">Somos una empresa dedicada a la producción y venta de artesanías ecuatorianas de alta calidad. Nuestro objetivo es preservar y promover la cultura y el arte local a través de productos hechos a mano por artesanos talentosos.</p>
+        </div>
+    </section>
+
+
+    <section id="Publicidad" tabindex="0">
+        <h1 id="publicidadTitulo" tabindex="0">Publicidad</h1>
+        <div class="video-container">
+            <iframe width="560" height="315" src="./videoPromocional/WIN_20240806_21_34_07_Pro.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tabindex="0"></iframe>
+        </div>
+    </section>
+
+
+    <footer id="Contactos" tabindex="0">
+        <div class="containerFooterIzquierda">
+            <h2 id="contactosTitulo" tabindex="0">Contactos</h2>
+        </div>
+        <div class="containerFooterCentro">
+            <p tabindex="0">Síguenos en:</p>
+        </div>
+        <div class="containerFooterDerecha">
+            <p tabindex="0">
+                <a href="#" tabindex="0"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" tabindex="0"><i class="fab fa-twitter"></i></a>
+                <a href="#" tabindex="0"><i class="fab fa-instagram"></i></a>
+                <a href="#" tabindex="0"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
