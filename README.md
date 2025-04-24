@@ -30,7 +30,3 @@ Visit the live site here:
 - CSS4 (modern and responsive styling)  
 - Vanilla JavaScript
 
-
-# Link página usabilidad:
-
-https://johanmantilla.github.io/Proyecto_PaginaWeb_Usabilidad_JM/
