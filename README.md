@@ -1,6 +1,6 @@
-# 🛍️ Usabilidad_JM
+# 🛍️ Página Web de Usabilidad para un emprendimiento
 
-**Usabilidad_JM** es una página web desarrollada con **HTML**, **CSS4** y **JavaScript**, que simula un **e-commerce** para un emprendimiento. Este proyecto fue creado como parte de un ejercicio de diseño enfocado en **usabilidad**, navegación intuitiva y experiencia de usuario.
+Es una página web desarrollada con **HTML**, **CSS4** y **JavaScript**, que simula un **e-commerce** para un emprendimiento. Este proyecto fue creado como parte de un ejercicio de diseño enfocado en **usabilidad**, navegación intuitiva y experiencia de usuario.
 
 ## 🌐 Sitio Web
 
@@ -15,9 +15,9 @@ Puedes visitar la página en el siguiente enlace:
 
 <br></br>
 
-# 🛍️ Usabilidad_JM
+# 🛍️ Usability Website for a Business
 
-**Usabilidad_JM** is a website built with **HTML**, **CSS4**, and **Vanilla JavaScript**, simulating an **e-commerce platform** for a small business. This project was developed as part of a usability-focused design exercise to enhance user experience and interface navigation.
+Is a website built with **HTML**, **CSS4**, and **Vanilla JavaScript**, simulating an **e-commerce platform** for a small business. This project was developed as part of a usability-focused design exercise to enhance user experience and interface navigation.
 
 ## 🌐 Website Link
 
